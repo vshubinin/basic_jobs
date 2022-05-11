@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataSource" class="com.mysql.cj.jdbc.MysqlDataSource">
+        <property name="url" value="#{dataSourceConfiguration.getDatabaseUrl()}"/>
+        <property name="user" value="#{dataSourceConfiguration.getDatabaseUser()}"/>
+        <property name="password" value="#{dataSourceConfiguration.getDatabasePassword()}"/>
+    </bean>
+
+    <bean id="hibernateDialect" class="java.lang.String">
+        <constructor-arg value="org.hibernate.dialect.MySQLDialect"/>
+    </bean>
+</beans>

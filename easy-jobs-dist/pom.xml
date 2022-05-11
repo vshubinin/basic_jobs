@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>basic-jobs-system</artifactId>
+        <groupId>org.basic</groupId>
+        <version>0.5-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>basic-jobs-dist</artifactId>
+    <packaging>pom</packaging>
+    <name>Basic Jobs distribution module</name>
+    <description>This module provides assembly files to create a single distribution of the project</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.basic</groupId>
+            <artifactId>basic-jobs-server</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.basic</groupId>
+            <artifactId>basic-jobs-admin</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
