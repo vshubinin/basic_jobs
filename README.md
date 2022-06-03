@@ -1,6 +1,6 @@
 Basic Jobs stores meta-data of jobs in a relational database. Three tables are used: `job`, `job_execution` and `job_execution_request`.
 The job server polls the `job_execution_request` table regularly looking for pending job execution requests.
-When a job execution request comes in, the job server creates a job instance of the requested job and executes it
+When a job execution request comes in, the job server creates a job instance of the requested job and executes it.
 
 
 The job server uses a pool of worker threads to execute jobs.
