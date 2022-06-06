@@ -163,4 +163,4 @@ java -cp "drivers/h2/*;lib/admin/*" ^
 ```
 
 For demonstration purpose, you can login to the application using `admin/admin` credentials.
-Make sure the server and the admin interface are running on different ports. In this example, the server is running on port `8080` (by default) and the admin interface on port `9000`.
+Make sure the server and the admin interface are running on different ports. In this example, the server is running on port `8080` (by default) and the admin interface on port `9000`
