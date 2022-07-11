@@ -3,7 +3,7 @@ The job server polls the `job_execution_request` table regularly looking for pen
 When a job execution request comes in, the job server creates a job instance of the requested job and executes it.
 
 
-The job server uses a pool of worker threads to execute jobs.
+The job server uses a pool of worker threads to execute jobs
 Job execution requests are submitted through a RESTful API
 
 ##How to use it ?
