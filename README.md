@@ -30,7 +30,7 @@ java -cp "drivers/h2/*:lib/server/*" \
  -Deasy.jobs.server.config.jobs.directory=$(pwd)/jobs \
  -Deasy.jobs.server.config.jobs.descriptor=$(pwd)/conf/jobs.yml \
  org.basic.jobs.server.JobServer
-``
+`
 
 If you are on windows, use the following command:
 
