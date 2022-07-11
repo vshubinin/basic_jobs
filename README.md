@@ -1,12 +1,12 @@
 Basic Jobs stores meta-data of jobs in a relational database. Three tables are used: `job`, `job_execution` and `job_execution_request`.
 The job server polls the `job_execution_request` table regularly looking for pending job execution requests.
-When a job execution request comes in, the job server creates a job instance of the requested job and executes it
+When a job execution request comes in, the job server creates a job instance of the requested job and executes it.
 
 
 The job server uses a pool of worker threads to execute jobs
 Job execution requests are submitted through a RESTful API
 
-## How to use it ?
+##How to use it ?
  You should get a directory with the following content:
 
 ```shell
@@ -159,8 +159,4 @@ java -cp "drivers/h2/*;lib/admin/*" ^
  -Dserver.port=9000 ^
  org.basic.jobs.admin.Application
 ```
-
-
-For demonstration purpose, you can login to the application using `admin/admin` credentials.
-Make sure the server and the admin interface are running on different ports. In this example, the server is running on port `8080` (by default) and the admin interface on port `9000`
 
