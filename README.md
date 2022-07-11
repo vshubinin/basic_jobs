@@ -9,7 +9,7 @@ Job execution requests are submitted through a RESTful API
 ##How to use it ?
  You should get a directory with the following content:
 
-`shell
+shell
 $>cd basic-jobs-dist-0.4
 $>tree -d
 ├── conf
