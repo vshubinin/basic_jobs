@@ -6,7 +6,7 @@ When a job execution request comes in, the job server creates a job instance of 
 The job server uses a pool of worker threads to execute jobs
 Job execution requests are submitted through a RESTful API
 
-##How to use it ?
+#How to use it ?
  You should get a directory with the following content:
 
 shell
