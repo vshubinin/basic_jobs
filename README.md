@@ -32,7 +32,7 @@ java -cp "drivers/h2/*:lib/server/*"
  org.basic.jobs.server.JobServer
 
 
-If you are on windows, use the following command:
+If you are on windows, use the following command
 
 
 java -cp "drivers/h2/*;lib/server/*" 
