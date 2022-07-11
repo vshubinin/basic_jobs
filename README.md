@@ -68,7 +68,7 @@ Jobs in Basic Jobs are regular Java classes. There is no annotation to add, no i
 Your jobs are simple POJOs. Easy Jobs is not intrusive! But you have to tell it where to find your job using a job descriptor:
 
 yaml
----
+--
 id: 1
 name: hello world job
 class: HelloWorldJob
