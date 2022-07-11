@@ -1,4 +1,4 @@
-Basic Jobs stores meta-data of jobs in a relational database. Three tables are used: `job`, `job_execution` and `job_execution_request`.
+Basic Jobs stores meta-data of jobs in a relational database. Three tables are used: `job`, `job_execution`, and `job_execution_request`.
 The job server polls the `job_execution_request` table regularly looking for pending job execution requests.
 When a job execution request comes in, the job server creates a job instance of the requested job and executes it.
 
@@ -47,8 +47,7 @@ That's it! The job server should be up and running waiting for you to submit job
 
 ## REST API
 
-By default, the job server will be started on `localhost:8080`. You can change the port as well as other parameter as described in the 
-In the previous command, we used H2 database which is fine for testing but not recommended for production. You can use another if you want.
+By default, the job server will be started on `localhost:8080`. You can change the port as well as another parameter as described in the previous command, we used the H2 database which is fine for testing but not recommended for production. You can use another if you want.
 
 The distribution comes with a sample job called `HelloWorldJob` located in the `jobs` directory. Here is its source code:
 
@@ -65,7 +64,7 @@ public class HelloWorldJob {
 }
 `
 
-Jobs in Basic Jobs are regular Java classes. There is no annotation to add, no interface to implement or class to extend.
+Jobs in Basic Jobs are regular Java classes. There is no annotation to add, no interface to implement, or class to extend.
 Your jobs are simple POJOs. Easy Jobs is not intrusive! But you have to tell it where to find your job using a job descriptor:
 
 ```yaml
