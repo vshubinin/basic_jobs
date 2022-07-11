@@ -35,7 +35,7 @@ java -cp "drivers/h2/*:lib/server/*"
 If you are on windows, use the following command:
 
 
-java -cp "drivers/h2/*;lib/server/*" ^
+java -cp "drivers/h2/*;lib/server/*" 
  -Deasy.jobs.database.config.file=%cd%\conf\database.properties ^
  -Deasy.jobs.database.config.init=true ^
  -Deasy.jobs.server.config.jobs.directory=%cd%\jobs ^
