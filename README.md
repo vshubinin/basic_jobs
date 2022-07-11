@@ -20,7 +20,7 @@ $>tree -d
 └── lib
     ├── admin
     └── server
-``
+`
 
 Run the job server with the following command:
 
