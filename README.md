@@ -45,7 +45,7 @@ java -cp "drivers/h2/*;lib/server/*"
 
 That's it! The job server should be up and running waiting for you to submit job execution requests.
 
-## REST API
+# REST API
 
 By default, the job server will be started on `localhost:8080`. You can change the port as well as another parameter as described in the previous command, we used the H2 database which is fine for testing but not recommended for production. You can use another if you want.
 
