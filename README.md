@@ -51,7 +51,7 @@ By default, the job server will be started on `localhost:8080`. You can change t
 
 The distribution comes with a sample job called `HelloWorldJob` located in the `jobs` directory. Here is its source code:
 
-``java
+`java
 public class HelloWorldJob {
 
     private String name;
