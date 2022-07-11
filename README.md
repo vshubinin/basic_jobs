@@ -73,7 +73,7 @@ id: 1
 name: hello world job
 class: HelloWorldJob
 method: doWork
-```
+``
 
 This job descriptor `jobs.yml` can be found in `conf` directory. It gives Easy Jobs all required information to identify your job and execute it when requested.
 Let's first check if the `HelloWorldJob` is registered:
