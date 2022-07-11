@@ -24,7 +24,7 @@ $>tree -d
 
 Run the job server with the following command:
 
-java -cp "drivers/h2/*:lib/server/*" \
+java -cp "drivers/h2/*:lib/server/*" 
  -Deasy.jobs.database.config.file=$(pwd)/conf/database.properties \
  -Deasy.jobs.database.config.init=true \
  -Deasy.jobs.server.config.jobs.directory=$(pwd)/jobs \
