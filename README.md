@@ -43,7 +43,7 @@ java -cp "drivers/h2/*;lib/server/*"
  org.basic.jobs.server.JobServer
 
 
-That's it! The job server should be up and running waiting for you to submit job execution requests.
+That's it! The job server should be up and running waiting for you to submit job execution requests
 
  REST API
 
