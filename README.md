@@ -41,7 +41,7 @@ java -cp "drivers/h2/*;lib/server/*"
  -Deasy.jobs.server.config.jobs.directory=%cd%\jobs ^
  -Deasy.jobs.server.config.jobs.descriptor=%cd%\conf\jobs.yml ^
  org.basic.jobs.server.JobServer
-`
+
 
 That's it! The job server should be up and running waiting for you to submit job execution requests.
 
